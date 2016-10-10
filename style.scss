@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 12px/1.4 $helvetica;
   color: $darkGray;
 }
 
@@ -45,22 +45,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2em;
+  margin: 8px 0 15px 0;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.8em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.4em;
   color: $gray;
 }
 
@@ -151,7 +152,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .masthead {
@@ -181,7 +182,6 @@ img {
 }
 
 .site-info {
-  float: left;
 
   @include mobile {
     float: none;
@@ -196,7 +196,7 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 3.5em;
   letter-spacing: 1px;
 }
 
@@ -242,13 +242,10 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  display: block;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
 }
 
 .post {
@@ -273,9 +270,6 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
@@ -287,3 +281,9 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+.svg-icon {
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+}
